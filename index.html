@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Dogeminer 2</title>
+    <title>Dogeminer 2 - Fixed</title>
     <style>
         body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #363636; color: white; }
-        #loading-indicator { position: absolute; top: 45%; width: 100%; text-align: center; font-family: "Comic Sans MS", sans-serif; }
+        #loading-indicator { position: absolute; top: 45%; width: 100%; text-align: center; font-family: sans-serif; }
     </style>
 </head>
 <body>
-
     <div id="wrapper">
         <div id="loading-indicator">
-            <div id="loading-text">MUCH LOADING... PLEASE WAIT...</div>
+            <div id="loading-text">FETCHING SHIBE FROM THE CLOUD...</div>
         </div>
         <div id="game"></div>
     </div>
 
     <script type="text/javascript">
+        // CRITICAL: This redirects the game to find the missing images/sounds
+        window.DOGE_ASSET_PATH = "https://dogeminer2.com/play/";
         window.dogeReady = false;
         window.dogechecked = false;
     </script>
@@ -25,6 +26,5 @@
     <script type="text/javascript" src="./1.fe6ad0b0922c8467de09.js"></script>
     <script type="text/javascript" src="./2.a2e1e3a074ebfcdc2f40.js"></script>
     <script type="text/javascript" src="./play.8d0fc5ba8f0f0562d947.js"></script>
-
 </body>
 </html>
